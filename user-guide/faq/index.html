@@ -1703,6 +1703,7 @@
 - Limit the scope to specific subscriptions or resource groups</p>
 <h3 id="what-is-the-includetags-parameter-for">What is the <code>-IncludeTags</code> parameter for?</h3>
 <p>The <code>-IncludeTags</code> parameter includes all resource tags in the report. This is useful for environments that use tagging extensively for organization or governance.</p>
+<p>Each tag is written as its own row, so a resource with 10 tags appears on 10 rows. Because this increases memory use, <code>-IncludeTags</code> automatically enables the same small-batch processing as <code>-Heavy</code>. Expect longer run times.</p>
 <h3 id="can-i-run-ari-without-an-internet-connection">Can I run ARI without an internet connection?</h3>
 <p>No, ARI needs to connect to Azure APIs to collect resource information.</p>
 <h2 id="troubleshooting-questions">Troubleshooting Questions</h2>
